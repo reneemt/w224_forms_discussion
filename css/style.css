@@ -44,10 +44,10 @@
   }
 
   .button-container {
-    grid-column: 1 / span 2; /* Make buttons span both columns */
+    grid-column: 1 / span 2; 
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between buttons */
+    gap: 10px;
     align-items: center;
   }
   
