@@ -1,5 +1,6 @@
   /* Create an accessible color palette using var()function */
   /* https://www.w3schools.com/css/css3_variables.asp */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
   
   form {
     display: grid;
@@ -9,9 +10,9 @@
     width:70%;
     margin: 20px auto;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #702082;
-    background: #CFC096;
+    box-shadow: 0 2px 4px #160d4143;
+    color: #912b34;
+    background: #c0d6ff;
   }
 
   .radio {
@@ -21,13 +22,19 @@
     color: #702082;
   }
 
+  .radio label:first-child{
+    font-weight: bold;
+    justify-content: center;
+  }
+
   #name {
     width: 100%;
     padding: 10px;
+    /* padding-right: 10px; */
     font-size: 18px;
     font-weight: bold;
-    background: #CFC096;
-    color: #9B9A6D;
+    background: #fff6fb;
+    color: #211147;
   }
 
   #message {
@@ -36,6 +43,14 @@
     resize: vertical;
   }
 
+  .button-container {
+    grid-column: 1 / span 2; /* Make buttons span both columns */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+    align-items: center;
+  }
+  
   input,
   textarea {
     padding: 10px;
@@ -55,4 +70,23 @@
 
   input[type="submit"]:hover {
     background-color: #45a049;
+  }
+  
+  label{
+    font-family:'Montserrat', sans-serif;
+  }
+
+  button[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px; /* Space between submit and reset button */
+  }
+  button[type="reset"]:hover {
+    background-color: #d82215;
   }
